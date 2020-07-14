@@ -1,0 +1,9 @@
+environments:
+  dev:
+    values:
+    - vars/common/configs.yaml
+    - vars/dev/configs.yaml
+  qa:
+    values:
+    - vars/common/configs.yaml
+    - vars/qa/configs.yaml

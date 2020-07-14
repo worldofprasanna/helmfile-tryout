@@ -1,9 +1,0 @@
-environments:
-  dev:
-    values:
-    - values/common/configs.yaml
-    - values/dev/configs.yaml
-  qa:
-    values:
-    - values/common/configs.yaml
-    - values/qa/configs.yaml
