@@ -38,6 +38,7 @@ Write about usage of Values folder, values.yaml.gotmpl
 2. Support for secrets (helm secrets) & configs
 3. AWS KMS to encrypt / decrypt secrets
 4. Have common configs & secrets and include that for all environments
+5. Different KMS for different envs
 
 
 ## Maintainers
