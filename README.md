@@ -18,6 +18,10 @@ Use Helmfile to orchestrate the Helm charts
 brew install kubectl
 brew install helm
 brew install helmfile
+# Helm Diff used by helmfile
+helm plugin install https://github.com/databus23/helm-diff --version master
+# Helm Secrets used by helmfile
+helm plugin install https://github.com/futuresimple/helm-secrets
 ```
 
 ## Usage
@@ -25,10 +29,13 @@ brew install helmfile
 Make sure you point to the correct kubernetes cluster.
 ```
 # To see the diff
-helmfile diff --environment dev|qa
+helmfile --environment dev|qa diff
 
 # To apply the changes
-helmfile apply --environment dev|qa
+helmfile --environment dev|qa --interactive apply
+
+# To delete all the releases interactively
+helmfile --environment dev|qa --interactive destroy
 ```
 
 ## Todo

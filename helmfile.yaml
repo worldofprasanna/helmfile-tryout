@@ -1,6 +1,6 @@
 bases:
-  - values/secrets.yaml
-  - values/configs.yaml
+  - vars/secrets.yaml
+  - vars/configs.yaml
 
 templates:
   app_default: &app_default
