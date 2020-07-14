@@ -34,6 +34,11 @@ helmfile apply --environment dev|qa
 ## Todo
 
 Write about usage of Values folder, values.yaml.gotmpl
+1. Support for multiple environments
+2. Support for secrets (helm secrets) & configs
+3. AWS KMS to encrypt / decrypt secrets
+4. Have common configs & secrets and include that for all environments
+
 
 ## Maintainers
 
