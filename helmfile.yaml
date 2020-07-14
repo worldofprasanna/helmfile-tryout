@@ -1,0 +1,16 @@
+bases:
+  - values/secrets.yaml
+  - values/configs.yaml
+
+templates:
+  app_default: &app_default
+    chart: ./charts/{{ `{{ .Release.Name }}` }}
+    values:
+    - ./charts/{{ `{{ .Release.Name }}` }}/values.yaml.gotmpl
+    namespace: default
+
+releases:
+- name: nginx
+  <<: *app_default
+- name: postgres
+  <<: *app_default

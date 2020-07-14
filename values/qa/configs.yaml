@@ -1,0 +1,4 @@
+---
+nginxReplicaCount: 2
+postgresReplicaCount: 2
+---

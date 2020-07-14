@@ -1,0 +1,3 @@
+---
+creation_rules:
+  - kms: 'arn:aws:kms:us-east-1:<AWS-ACCOUNT-ID>:key/33990a42-e007-42db-8f29-01c7dbd54610'
